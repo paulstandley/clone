@@ -14,6 +14,10 @@ laravel new clone
 
 php artisan serve
 
-php artisan make:auth
+composer require laravel/ui --dev
+
+php artisan ui vue --auth
+
+npm install && npm run dev
 
 ```
