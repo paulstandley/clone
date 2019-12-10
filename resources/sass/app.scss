@@ -7,6 +7,11 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// Header
+// Global
+@import 'components/global';
 
+// Welcome
+@import 'components/_welcome';
+
+// Header
 @import 'components/header';

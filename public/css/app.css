@@ -11356,6 +11356,75 @@ a.text-dark:focus {
   }
 }
 
+html,
+body {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+body#welcome {
+  background: linear-gradient(256deg, rgba(175, 170, 192, 0.8), rgba(112, 119, 185, 0) 70%), linear-gradient(172deg, rgba(101, 106, 146, 0.8), rgba(82, 74, 155, 0) 70%), linear-gradient(340deg, rgba(95, 79, 110, 0.8), rgba(91, 88, 148, 0) 70%);
+}
+
+body#welcome .links a {
+  color: #111;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0.09rem ridge #111;
+  border-radius: 0.5rem;
+}
+
+body#welcome .links > a:hover {
+  color: white;
+  border: 0.09rem ridge white;
+  background: #111;
+}
+
+body#welcome .title {
+  padding: 1rem;
+}
+
+body#welcome .title header .welcome-img {
+  max-height: 20rem;
+}
+
+body#welcome .title header h1 {
+  padding: 1rem;
+  color: #111;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
 header.class-header h1 {
   font-size: 1.6rem;
   padding: 0.2rem 0 0 0.4rem;
@@ -11365,5 +11434,28 @@ header.class-header h1 {
 header.class-header .img {
   max-width: 1.4rem;
   padding: 0 0 0.8rem 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
 }
 
