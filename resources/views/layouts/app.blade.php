@@ -26,7 +26,7 @@
                 <header class="class-header">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         <img class="img" src="images/iconfinder.svg" alt="start wars stomtrooper">
-                         <h1>{{ config('app.name', 'Clone') }}</h1>
+                         <h1><strong>|:|</strong>  {{ config('app.name', 'Clone') }}  <strong>|:|</strong> </h1>
                     </a>
                 </header>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
