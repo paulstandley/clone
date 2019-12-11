@@ -11389,25 +11389,25 @@ body {
 }
 
 body#welcome {
-  background: linear-gradient(256deg, rgba(175, 170, 192, 0.8), rgba(112, 119, 185, 0) 70%), linear-gradient(172deg, rgba(101, 106, 146, 0.8), rgba(82, 74, 155, 0) 70%), linear-gradient(340deg, rgba(95, 79, 110, 0.8), rgba(91, 88, 148, 0) 70%);
+  background: linear-gradient(256deg, rgba(221, 216, 236, 0.4), rgba(77, 83, 131, 0.4) 70%), linear-gradient(172deg, rgba(187, 168, 231, 0.2), rgba(52, 47, 90, 0.6) 70%), linear-gradient(340deg, rgba(184, 169, 199, 0.4), rgba(86, 82, 156, 0.4) 70%);
 }
 
 body#welcome .links a {
-  color: #111;
+  color: #111111;
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
-  border: 0.09rem ridge #111;
+  border: 0.09rem ridge #111111;
   border-radius: 0.5rem;
 }
 
 body#welcome .links > a:hover {
   color: white;
   border: 0.09rem ridge white;
-  background: #111;
+  background: #111111;
 }
 
 body#welcome .title {
@@ -11420,7 +11420,7 @@ body#welcome .title header .welcome-img {
 
 body#welcome .title header h1 {
   padding: 1rem;
-  color: #111;
+  color: #111111;
   font-size: 6rem;
   font-weight: bold;
 }

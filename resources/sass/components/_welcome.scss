@@ -1,9 +1,9 @@
 body#welcome {
 
   background: 
-    linear-gradient(256deg, rgba(175, 170, 192, 0.8), rgba(112, 119, 185, 0) 70%),
-    linear-gradient(172deg, rgba(101, 106, 146, 0.8), rgba(82, 74, 155, 0) 70%),
-    linear-gradient(340deg, rgba(95, 79, 110, 0.8), rgba(91, 88, 148, 0) 70%);
+    linear-gradient(256deg, $welcome-1a, $welcome-1b 70%),
+    linear-gradient(172deg, $welcome-2a, $welcome-2b 70%),
+    linear-gradient(340deg, $welcome-3a, $welcome-3b 70%);
 
   .links {
 
@@ -13,7 +13,8 @@ body#welcome {
       font-size: 1rem;
       font-weight: 600;
       letter-spacing: .1rem;
-      text-decoration: none;        text-transform: uppercase;
+      text-decoration: none;        
+      text-transform: uppercase;
       border: 0.09rem ridge $body-welcome;
       border-radius: 0.5rem;
     }

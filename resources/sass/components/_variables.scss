@@ -1,6 +1,6 @@
 // Body
-$body-bg: #f8fafc;
-$body-welcome: #111;
+$body-bg: rgb(248, 250, 252);
+$body-welcome: rgb(17, 17, 17);
 
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
@@ -18,3 +18,11 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+// Welcome page
+$welcome-1a: rgba(221, 216, 236, 0.4);
+$welcome-2a: rgba(187, 168, 231, 0.2);
+$welcome-3a: rgba(184, 169, 199, 0.4);
+$welcome-1b: rgba(77, 83, 131, 0.4);
+$welcome-2b: rgba(52, 47, 90, 0.6);
+$welcome-3b: rgba(86, 82, 156, 0.4);
