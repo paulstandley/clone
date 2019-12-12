@@ -25,7 +25,7 @@
                 <img class="w-100" src="images/no-image.jpg" alt="no image">
             </div>
             <div class="col-4">
-                <img referrerpolicy="origin" class="w-100" src="images/no-image.jpg" alt="no image">
+                <img class="w-100" src="images/no-image.jpg" alt="no image">
             </div>
         </div>
     </div>
