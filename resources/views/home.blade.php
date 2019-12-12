@@ -7,7 +7,7 @@
             <img src="images/noimage.jpg" alt="no image">
         </div>
         <div class="col-9">
-            <h2>Clone</h2>
+            <h2>{{  $user->username  }}</h2>
             <section class="d-flex sec">
                 <h3>0 posts</h3>
                 <h3>0 followers</h3>
@@ -25,7 +25,7 @@
                 <img class="w-100" src="images/no-image.jpg" alt="no image">
             </div>
             <div class="col-4">
-                <img class="w-100" src="images/no-image.jpg" alt="no image">
+                <img referrerpolicy="origin" class="w-100" src="images/no-image.jpg" alt="no image">
             </div>
         </div>
     </div>
