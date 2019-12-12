@@ -6,7 +6,7 @@
 
 ---
 
-### Bash
+### Bash :-)
 
 ```BASH
 
@@ -60,11 +60,13 @@ class AppServiceProvider extends ServiceProvider
 
 ```
 
-### Bash :)
+### Bash `¬`
 
 ```BASH
 
 php artisan migrate
+
+php artisa make:controller ProfilesController
 
 ```
 
