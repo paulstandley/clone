@@ -88,7 +88,8 @@ php artisan make:model Profile -m
 
 ---
 
-
 ## Creadit
 
 svg by Symbolicons on [iconfinder](https://www.iconfinder.com/icons/216965/clone_storm_trooper_icon).
+
+https://laravel.com/docs/6.x/controllers

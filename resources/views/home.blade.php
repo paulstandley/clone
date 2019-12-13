@@ -13,9 +13,9 @@
                 <h3>0 followers</h3>
                 <h3>0 following</h3>
             </section>
-            <h3>Code.co.uk</h3>
-            <p>We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy We are a carbon copy</p>
-            <a href="#">https://www.clone.co.uk</a>
+            <h3>{{  $user->profile->title  }}</h3>
+            <p>{{  $user->profile->description  }}</p>
+            <a href="#">{{  $user->profile->url  }}</a>
         </div>
         <div class="row pt-5">
             <div class="col-4">
