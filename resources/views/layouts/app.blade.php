@@ -25,7 +25,7 @@
             <div class="container">
                 <header class="class-header">
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <img class="img" src="images/iconfinder.svg" alt="start wars stomtrooper">
+                        <img class="img" src="https://res.cloudinary.com/pieol2/image/upload/v1576333661/iconfinder.svg" alt="start wars stomtrooper">
                          <h1><strong>|:|</strong>  {{ config('app.name', 'Clone') }}  <strong>|:|</strong> </h1>
                     </a>
                 </header>

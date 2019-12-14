@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-            <img src="images/noimage.jpg" alt="no image">
+            <img src="https://res.cloudinary.com/pieol2/image/upload/v1576332647/noimage.jpg" alt="no image">
         </div>
         <div class="col-9">
             <h2>{{  $user->username  }}</h2>
@@ -19,13 +19,13 @@
         </div>
         <div class="row pt-5">
             <div class="col-4">
-                <img class="w-100" src="images/no-image.jpg" alt="no image">
+                <img class="w-100" src="https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" alt="no image">
             </div>
             <div class="col-4">
-                <img class="w-100" src="images/no-image.jpg" alt="no image">
+                <img class="w-100" src="https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" alt="no image">
             </div>
             <div class="col-4">
-                <img class="w-100" src="images/no-image.jpg" alt="no image">
+                <img class="w-100" src="https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" alt="no image">
             </div>
         </div>
     </div>
