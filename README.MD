@@ -78,6 +78,8 @@ php artisan tinker
 >>> $user->push();
 => true
 
+php artisan make:model Post -m
+
 ```
 
 ---
@@ -95,7 +97,7 @@ php artisan tinker
 
 ---
 
-## Creadit
+## Credits
 
 svg by Symbolicons on [iconfinder](https://www.iconfinder.com/icons/216965/clone_storm_trooper_icon).
 
