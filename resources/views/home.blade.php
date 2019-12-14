@@ -7,7 +7,10 @@
             <img src="https://res.cloudinary.com/pieol2/image/upload/v1576332647/noimage.jpg" alt="no image">
         </div>
         <div class="col-9">
-            <h2>{{  $user->username  }}</h2>
+           <div class="d-flex justify-content-between align-items-baseline">
+                <h2>{{  $user->username  }}</h2>
+                <a class="button btn btn-primary" href="#">Add New Post</a>
+           </div>
             <section class="d-flex sec">
                 <h4>0 posts</h4>
                 <h4>0 followers</h4>

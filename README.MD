@@ -60,6 +60,21 @@ class AppServiceProvider extends ServiceProvider
 
 ```
 
+---
+
+## **Actions Handled By Resource Controller**
+
+### __Verb__ | __URI__ | __Action__	| __Route Name__
+#### GET | /photos | index | photos.index
+#### GET | /photos/create | create  |  photos.create
+#### POST | /photos	| store | photos.store
+#### GET | /photos/{photo} | show | photos.show
+#### GET | /photos/{photo}/edit | edit | photos.edit
+#### PUT/PATCH | /photos/{photo} | update | photos.update
+#### DELETE	| /photos/{photo}	| destroy | photos.destroy
+
+---
+
 ### Bash ¬
 
 ```BASH
@@ -80,22 +95,9 @@ php artisan tinker
 
 php artisan make:model Post -m
 
+php artisan make:conrtoller PostsController -r
+
 ```
-
----
-
-## **Actions Handled By Resource Controller**
-
-### __Verb__ | __URI__ | __Action__	| __Route Name__
-#### GET | /photos | index | photos.index
-#### GET | /photos/create | create  |  photos.create
-#### POST | /photos	| store | photos.store
-#### GET | /photos/{photo} | show | photos.show
-#### GET | /photos/{photo}/edit | edit | photos.edit
-#### PUT/PATCH | /photos/{photo} | update | photos.update
-#### DELETE	| /photos/{photo}	| destroy | photos.destroy
-
----
 
 ## Credits
 
