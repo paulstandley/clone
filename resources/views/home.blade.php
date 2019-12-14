@@ -9,9 +9,9 @@
         <div class="col-9">
             <h2>{{  $user->username  }}</h2>
             <section class="d-flex sec">
-                <h3>0 posts</h3>
-                <h3>0 followers</h3>
-                <h3>0 following</h3>
+                <h4>0 posts</h4>
+                <h4>0 followers</h4>
+                <h4>0 following</h4>
             </section>
             <h3>{{  $user->profile->title  }}</h3>
             <p>{{  $user->profile->description  }}</p>

@@ -70,6 +70,13 @@ php artisa make:controller ProfilesController
 
 php artisan make:model Profile -m
 
+php artisan tinker
+>>> $user->profile->url = 'paulstandley.com';
+=> "paulstandley.com"
+>>> $user->save();
+=> true
+>>> $user->push();
+=> true
 
 ```
 
