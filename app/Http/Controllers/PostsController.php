@@ -35,7 +35,8 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Get the post and veryfy
+        dd(request()->all());
     }
 
     /**

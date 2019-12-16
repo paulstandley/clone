@@ -106,8 +106,12 @@ php artisan make:conrtoller PostsController -r
 
 ```
 
+---
+
 ## Credits
 
 svg by Symbolicons on [iconfinder](https://www.iconfinder.com/icons/216965/clone_storm_trooper_icon).
 
 https://laravel.com/docs/6.x/controllers
+
+https://www.youtube.com/watch?v=ImtZ5yENzgE&t=7754s  1:52:13
