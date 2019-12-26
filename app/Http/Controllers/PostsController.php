@@ -36,7 +36,17 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         // Get the post and veryfy
-        dd(request()->all());
+        $data = request()->validate([
+            'caption' => 'required',
+            'image' => ['required', 'image'],
+        ]);
+
+        // Add user id        
+        auth()->user()->posts()->create($data);
+
+        dd($data);
+        \App\Post::create($data); 
+        
     }
 
     /**
