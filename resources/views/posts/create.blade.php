@@ -8,7 +8,7 @@
             <div class="card-header text-center font-italic">{{ __('Post') }}</div>
 
             <div class="card-body justify">
-                <form method="POST" accept="/p" enctype="multipart/form-data">
+                <form method="POST" action="/p" accept="/p" enctype="multipart/form-data">
                     @csrf
 
                     <div class="form-group row">
