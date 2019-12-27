@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
+    // Add auth to the controller
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -41,12 +46,11 @@ class PostsController extends Controller
             'image' => ['required', 'image'],
         ]);
 
+        request('image')->store('uploads', 'public');
+
         // Add user id        
         auth()->user()->posts()->create($data);
 
-        dd($data);
-        \App\Post::create($data); 
-        
     }
 
     /**

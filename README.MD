@@ -114,6 +114,7 @@ svg by Symbolicons on [iconfinder](https://www.iconfinder.com/icons/216965/clone
 
 https://laravel.com/docs/6.x/controllers
 
-https://www.youtube.com/watch?v=ImtZ5yENzgE&t=7754s  1:52:13
+https://www.youtube.com/watch?v=ImtZ5yENzgE&t=7754s
 
-Add [caption] to fillable property to allow mass assignment on [App\Post]. 2:00:00
+Facade\Ignition\Exceptions\ViewException
+Trying to get property 'title' of non-object (View: C:\xampp\htdocs\clone\resources\views\profiles\index.blade.php) 2:10:44
