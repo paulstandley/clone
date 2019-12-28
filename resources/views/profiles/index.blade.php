@@ -16,9 +16,14 @@
                 <h4>0 followers</h4>
                 <h4>0 following</h4>
             </section>
+            @if ( $user->profile != null )
             <h3>{{  $user->profile->title  }}</h3>
             <p>{{  $user->profile->description  }}</p>
             <a href="#">{{  $user->profile->url  }}</a>
+            @endif
+            <h3>No title</h3>
+            <p>No description</p>
+            <a href="#">No profile url</a>
         </div>
         <div class="row pt-5">
             <div class="col-4">
