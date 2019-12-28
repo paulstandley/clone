@@ -46,6 +46,7 @@ class PostsController extends Controller
             'image' => ['required', 'image'],
         ]);
 
+        // Store image
         request('image')->store('uploads', 'public');
 
         // Add user id        

@@ -104,6 +104,8 @@ php artisan make:model Post -m
 
 php artisan make:conrtoller PostsController -r
 
+php artisan storage:link
+
 ```
 
 ---
@@ -115,6 +117,3 @@ svg by Symbolicons on [iconfinder](https://www.iconfinder.com/icons/216965/clone
 https://laravel.com/docs/6.x/controllers
 
 https://www.youtube.com/watch?v=ImtZ5yENzgE&t=7754s
-
-Facade\Ignition\Exceptions\ViewException
-Trying to get property 'title' of non-object (View: C:\xampp\htdocs\clone\resources\views\profiles\index.blade.php) 2:10:44
