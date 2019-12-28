@@ -26,15 +26,11 @@
             <a href="#">No profile url</a>
         </div>
         <div class="row pt-5">
-            <div class="col-4">
-                <img class="w-100" src="https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" alt="no image">
-            </div>
-            <div class="col-4">
-                <img class="w-100" src="https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" alt="no image">
-            </div>
-            <div class="col-4">
-                <img class="w-100" src="https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" alt="no image">
-            </div>
+            @foreach ($user->posts as $post)
+                <div class="col-4">
+                    <img class="w-100" src="/storage/{{ $post->image }}" alt="no image">
+                </div>
+            @endforeach
         </div>
     </div>
 </div>
