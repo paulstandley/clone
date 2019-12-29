@@ -106,6 +106,8 @@ php artisan make:conrtoller PostsController -r
 
 php artisan storage:link
 
+composer require intervention/image
+
 ```
 
 ---
