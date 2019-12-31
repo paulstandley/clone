@@ -11515,3 +11515,7 @@ header.class-header:hover .img {
   top: 18px;
 }
 
+.post_section {
+  max-height: 100vh;
+}
+
