@@ -9,7 +9,8 @@
         <div class="col-9">
            <div class="d-flex justify-content-between align-items-baseline">
                 <h2>{{  $user->username  }}</h2>
-            <a class="button btn btn-primary" href="{{ url('p/create') }}">Add New Post</a>
+                <a href="/profile/{{  $user->id  }}/edit">Edit Profile</a>
+                <a class="button btn btn-primary" href="{{ url('p/create') }}">Add New Post</a>
            </div>
             <section class="d-flex sec">
                 <h4><strong>{{  $user->posts->count()  }}</strong> posts</h4>
@@ -17,9 +18,9 @@
                 <h4><strong>0</strong> following</h4>
             </section>
             @if ( $user->profile != null )
-            <h3>{{  $user->profile->title  }}</h3>
-            <p>{{  $user->profile->description  }}</p>
-            <a href="#">{{  $user->profile->url  }}</a>
+                <h3>{{  $user->profile->title  }}</h3>
+                <p>{{  $user->profile->description  }}</p>
+                <a href="#">{{  $user->profile->url  }}</a>
             @endif
             <h3>No title</h3>
             <p>No description</p>
