@@ -5,19 +5,19 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
         <div class="card ">
-            <div class="card-header text-center font-italic">{{ __('Post') }}</div>
+            <div class="card-header text-center font-italic">{{ __('Edit Profle') }}</div>
 
             <div class="card-body justify">
                 <form method="POST" action="/profile{{  $user->id  }}" accept="/p" enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
                     <div class="form-group row">
-                        <label for="caption" class="col-md-4 col-form-label text-md-right">{{ __('Caption') }}</label>
+                        <label for="title" class="col-md-4 col-form-label text-md-right">{{ __('Title') }}</label>
 
                         <div class="col-md-6">
-                            <input id="caption" type="text" class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}" required autocomplete="caption" autofocus>
+                            <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') ?? $user->profile->title }}" required autocomplete="title" autofocus>
 
-                            @error('caption')
+                            @error('title')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
@@ -26,7 +26,35 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
+                      <label for="desscrtion" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+
+                      <div class="col-md-6">
+                          <input id="desscrtion" type="text" class="form-control @error('desscrtion') is-invalid @enderror" name="desscrtion" value="{{ old('desscrtion') }}" required autocomplete="desscrtion" autofocus>
+
+                          @error('desscrtion')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                      </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="url" class="col-md-4 col-form-label text-md-right">{{ __('Url') }}</label>
+
+                    <div class="col-md-6">
+                        <input id="url" type="text" class="form-control @error('url') is-invalid @enderror" name="url" value="{{ old('url') }}" required autocomplete="url" autofocus>
+
+                        @error('url')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                    <div class="form-group row">
+                        <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Profile Image') }}</label>
 
                         <div class="col-md-6">
                             <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" required autocomplete="image">
@@ -41,7 +69,7 @@
                     <div class="form-group row mb-0">
                       <div class="col-md-6 offset-md-4">
                           <button type="submit" class="btn btn-primary">
-                              {{ __('Add post') }}
+                              {{ __('Save Profile') }}
                           </button>
                       </div>
                   </div>
