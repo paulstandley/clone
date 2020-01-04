@@ -20,7 +20,7 @@
             @if ( $user->profile != null )
                 <h3>{{  $user->profile->title  }}</h3>
                 <p>{{  $user->profile->description  }}</p>
-                <a href="https://{{  $user->profile->url  }}" target="_blank">{{  $user->profile->url  }}</a>
+                <a href="{{  $user->profile->url  }}" target="_blank">{{  $user->profile->url  }}</a>
             @endif
         </div>
         <div class="row pt-5">

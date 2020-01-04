@@ -26,12 +26,12 @@
                     </div>
 
                     <div class="form-group row">
-                      <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
+                      <label for="desscrtion" class="col-md-4 col-form-label text-md-right">{{ __('Description') }}</label>
 
                       <div class="col-md-6">
-                          <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') ?? $user->profile->description }}" required autocomplete="description" autofocus>
+                          <input id="descrtion" type="text" class="form-control @error('descrtion') is-invalid @enderror" name="descrtion" value="{{ old('descrtion') ?? $user->profile->description }}" required autocomplete="descrtion" autofocus>
 
-                          @error('description')
+                          @error('descrtion')
                               <span class="invalid-feedback" role="alert">
                                   <strong>{{ $message }}</strong>
                               </span>

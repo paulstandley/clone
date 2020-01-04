@@ -17,6 +17,7 @@ class ProfilesController extends Controller
     {
         return view('profiles.index', compact('user'));
     }
+
     /**
      * Show the form for editing the user profile.
      *
@@ -26,6 +27,26 @@ class ProfilesController extends Controller
     public function edit(\App\User $user)
     {
         return view('profiles.edit', compact('user'));
+    }
+
+        
+    /**
+     * Show the form for editing the user profile.
+     *
+     * @param  int  $user
+     * @return \Illuminate\Http\Response
+     */
+    public function update(User $user)
+    {
+        $data = request()->validate([
+            'title' => 'required',
+            'description' => 'required',
+            'url'  => 'url',
+            'image' => '',        
+        ]);
+
+        $user->profile->update($data);
+        return redirect("/profile/{$user->id}");
     }
 
 }
