@@ -22,9 +22,6 @@
                 <p>{{  $user->profile->description  }}</p>
                 <a href="#">{{  $user->profile->url  }}</a>
             @endif
-            <h3>No title</h3>
-            <p>No description</p>
-            <a href="#">No profile url</a>
         </div>
         <div class="row pt-5">
             @foreach ($user->posts as $post)

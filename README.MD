@@ -147,7 +147,7 @@ class AppServiceProvider extends ServiceProvider
 
 ## **Actions Handled By Resource Controller**
 
-### __Verb__ | __URI__ | __Action__	| __Route Name__
+### __Verb__ | __URI__ | __Action__ | __Route Name__
 
 #### GET | /photos | index | photos.index
 
@@ -176,12 +176,32 @@ php artisa make:controller ProfilesController
 php artisan make:model Profile -m
 
 php artisan tinker
->>> $user->profile->url = 'paulstandley.com';
+>>> $profile = new \App\Profile();
+=> App\Profile{#3042}
+>>> $profile->title = 'Cool Title';
+=> "Cool Title"
+>>> $profile->description = 'Cool Description';
+=> "Cool Description"
+>>> $profile->url = 'paulstandley.com';
 => "paulstandley.com"
->>> $user->save();
+>>> $profile->save();
 => true
->>> $user->push();
+>>> $profile->push();
 => true
+>>> $profile->all();
+=> Illuminate\Database\Eloquent\Collection {#3048
+     all: [
+       App\Profile {#3047
+         id: 1,
+         user_id: 1,
+         title: "My profile",
+         description: "My description",
+         url: "paulstandley.com",
+         created_at: "2020-01-04 12:08:07",
+         updated_at: "2020-01-04 12:08:07",
+       },
+     ],
+   }
 
 php artisan make:model Post -m
 
