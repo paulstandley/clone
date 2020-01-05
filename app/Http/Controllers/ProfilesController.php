@@ -13,7 +13,7 @@ class ProfilesController extends Controller
      * @param  int  $user
      * @return \Illuminate\Http\Response
      */
-    public function index(\App\User $user)
+    public function index(User $user)
     {
         return view('profiles.index', compact('user'));
     }
@@ -24,14 +24,14 @@ class ProfilesController extends Controller
      * @param  int  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(\App\User $user)
+    public function edit(User $user)
     {
         return view('profiles.edit', compact('user'));
     }
 
         
     /**
-     * Show the form for editing the user profile.
+     * Show the form for updateing the user profile.
      *
      * @param  int  $user
      * @return \Illuminate\Http\Response
