@@ -3,10 +3,10 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-3">
-            <img class="pl-3" src="https://res.cloudinary.com/pieol2/image/upload/v1576332647/noimage.jpg" alt="no image">
+        <div class="col-4 p-1">
+            <img class="m-1" src="https://res.cloudinary.com/pieol2/image/upload/v1576332647/noimage.jpg" alt="no image">
         </div>
-        <div class="col-9">
+        <div class="col-8">
            <div class="d-flex justify-content-between align-items-baseline">
                 <h2>{{  $user->username  }}</h2>
                 @can ('update', $user->profile)
