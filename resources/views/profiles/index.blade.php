@@ -9,8 +9,9 @@
         <div class="col-8">
            <div class="d-flex justify-content-between align-items-baseline">
                 <h2>{{  $user->username  }}</h2>
+                <follow-button></follow-button>
                 @can ('update', $user->profile)
-                    <a href="/profile/{{  $user->id  }}/edit">Edit Profile</a>
+                    <a class="btn btn-primary" href="/profile/{{  $user->id  }}/edit">Edit Profile</a>
                 @endcan
                 <a class="button btn btn-primary" href="{{ url('p/create') }}">Add New Post</a>
            </div>
