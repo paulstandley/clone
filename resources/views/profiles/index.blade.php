@@ -9,7 +9,7 @@
         <div class="col-8">
            <div class="d-flex justify-content-between align-items-baseline">
                 <h2>{{  $user->username  }}</h2>
-                <follow-button user-id="{{  $user->id  }}"></follow-button>
+                <follow-button class="p-1" user-id="{{  $user->id  }}"></follow-button>
                 @can ('update', $user->profile)
                     <a class="btn btn-primary" href="/profile/{{  $user->id  }}/edit">Edit Profile</a>
                 @endcan
@@ -26,6 +26,7 @@
                 <a href="{{  $user->profile->url  }}" target="_blank">{{  $user->profile->url  }}</a>
             @endif
         </div>
+        <br>
         <div class="row pt-5">
             @foreach ($user->posts as $post)
                 <div class="col-4 pb-4">

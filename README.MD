@@ -211,6 +211,10 @@ php artisan storage:link
 
 composer require intervention/image
 
+php artisan make:controler FollowsController
+
+php artisan make:migration creates_profile_user_pivot_table --create profile_user
+
 ```
 
 ---
@@ -221,4 +225,4 @@ svg by Symbolicons on [iconfinder](https://www.iconfinder.com/icons/216965/clone
 
 https://laravel.com/docs/6.x/controllers
 
-https://www.youtube.com/watch?v=ImtZ5yENzgE&t=7754s 3:13:00
+https://www.youtube.com/watch?v=ImtZ5yENzgE&t=7754s 3:31:30
