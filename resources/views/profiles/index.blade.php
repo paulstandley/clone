@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-4 p-1">
-            <img class="rounded-circle w-100" src="/storage/{{  $user->profile->image  }}" alt="no image">
+            <img class="rounded-circle w-100" src="/storage/{{  $user->profile->image ? $user->profile->image : "https://res.cloudinary.com/pieol2/image/upload/v1576332658/no-image.jpg" }}" alt="download image">
         </div>
         <div class="col-8">
            <div class="d-flex justify-content-between align-items-baseline">
