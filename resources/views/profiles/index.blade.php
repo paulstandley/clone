@@ -9,7 +9,11 @@
         <div class="col-8">
            <div class="d-flex justify-content-between align-items-baseline">
                 <h2>{{  $user->username  }}</h2>
-                <follow-button class="p-1" user-id="{{  $user->id  }}"></follow-button>
+                <follow-button 
+                    follows="{{  $follows  }}" 
+                    class="p-1" 
+                    user-id="{{  $user->id  }}">
+                </follow-button>
                 @can ('update', $user->profile)
                     <a class="btn btn-primary" href="/profile/{{  $user->id  }}/edit">Edit Profile</a>
                 @endcan

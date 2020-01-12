@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class FollowsController extends Controller
 {
+    public function __construct() 
+    {
+        $this->middleware('auth');
+    }
     /**
      * Store a newly created resource following toggle profile in storage.
      *

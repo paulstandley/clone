@@ -11,18 +11,20 @@ class ProfilesController extends Controller
     /**
      * Display a listing of the user profile.
      *
-     * @param  int  $user
+     * @param  $user 
+     * @var $follows
      * @return \Illuminate\Http\Response
      */
     public function index(User $user)
     {
-        return view('profiles.index', compact('user'));
+        $follows = (auth()->user()) ? auth()->user()->following->contains($user->id) : false;
+        return view('profiles.index', compact('user', 'follows'));
     }
 
     /**
      * Show the form for editing the user profile.
      *
-     * @param  int  $user
+     * @param  $user
      * @return \Illuminate\Http\Response
      */
     public function edit(User $user)
@@ -34,7 +36,7 @@ class ProfilesController extends Controller
         
     /**
      * Show the form for updateing the user profile.
-     *
+     * @var $data $imagePath $image $imageArray
      * @param  int  $user
      * @return \Illuminate\Http\Response
      */
