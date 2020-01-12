@@ -40,7 +40,8 @@ class User extends Authenticatable
     /**
     * The function returns boot model.
     *
-    * @var function
+    * @var $user
+    * @return $user
     */
     protected static function boot()
     {
@@ -57,7 +58,7 @@ class User extends Authenticatable
     /**
     * The function returns post model relaysionship.
     *
-    * @var function
+    * @return Post
     */
     public function posts() 
     {
@@ -65,9 +66,19 @@ class User extends Authenticatable
     }
 
     /**
+    * The function that returns the model for the profile relaysionship.
+    *
+    * @return Profile
+    */
+    public function following() 
+    {
+        return $this->belongsToMany(Profile::class);
+    }
+
+    /**
     * The function returns profile model relaysionship.
     *
-    * @var function
+    * @return Profile
     */
     public function profile() 
     {

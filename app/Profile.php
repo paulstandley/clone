@@ -20,10 +20,22 @@ class Profile extends Model
         return '/storage/' . $imagePath;
     }
 
+    
     /**
-    * The function returns profile model.
+    * The followers relaysionship to the function 
+    * that returns the model for the user relaysionship.
+    *  
+    * @return User
+    */
+    public function followers() 
+    {
+        return $this->belongsToMany(User::class);
+    }
+
+    /**
+    * The function returns user model.
     *
-    * @var function
+    * @return User
     */
     public function user()
     {
