@@ -12,14 +12,19 @@ class ProfilesController extends Controller
      * Display a listing of the user profile.
      *
      * @param  $user 
-     * @var $follows
+     * @var $follows $postCount $followersCount $followingCount
      * @return \Illuminate\Http\Response
      */
     public function index(User $user)
     {
+        $postCount = $user->posts->count();
+        $followersCount = $user->profile->followers->count();
+        $followingCount = $user->following->count();
+
         $follows = (auth()->user())
         ? auth()->user()->following->contains($user->id) : false;
-        return view('profiles.index', compact('user', 'follows'));
+
+        return view('profiles.index', compact('user', 'follows', 'postCount','followersCount', 'followingCount'));
     }
 
     /**

@@ -33,12 +33,17 @@
               {{  $post->user->username  }}
             </span>
           </a>
-        </span>
-        {{  $post->caption  }}
-      </p>
+          </span>
+          {{  $post->caption  }}
+        </p>
+      </div>
+    </div>
+    <hr>
+  @endforeach
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      {{  $posts->links()  }}
     </div>
   </div>
-  <hr>
-  @endforeach
 </div>
 @endsection

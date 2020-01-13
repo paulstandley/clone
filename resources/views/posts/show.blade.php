@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row post_section p-4">
     <div class="col-8">
-      <img class="w-100" src="/storage/{{  $post->image  }}" alt="your image">
+      <img class="w-100" src="/storage/{{  $post->image  }}" alt="{{  $post->caption  }}">
     </div>
     <div class="col-4">
       <div class="d-flex align-items-center">

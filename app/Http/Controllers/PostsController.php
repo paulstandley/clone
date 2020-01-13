@@ -21,7 +21,7 @@ class PostsController extends Controller
     public function index()
     {
         $users = auth()->user()->following()->pluck('profiles.user_id');
-        $posts = Post::whereIn('user_id', $users)->latest()->get();
+        $posts = Post::whereIn('user_id', $users)->with('user')->latest()->paginate(4);
 
         return view('posts.index', compact('posts'));
     }
@@ -75,7 +75,7 @@ class PostsController extends Controller
      * @param  int  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(\App\Post $post)
+    public function show(Post $post)
     {
         return view('posts.show', compact('post'));
     }

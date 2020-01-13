@@ -20,9 +20,9 @@
                 <a class="button btn btn-primary" href="{{ url('p/create') }}">Add New Post</a>
            </div>
             <section class="d-flex sec">
-                <h4><strong>{{  $user->posts->count()  }}</strong> Posts</h4>
-                <h4><strong>{{  $user->profile->followers->count()  }}</strong> Followers</h4>
-                <h4><strong>{{  $user->following->count()  }}</strong> Following</h4>
+                <h4><strong>{{  $postCount  }}</strong> Posts</h4>
+                <h4><strong>{{  $followersCount  }}</strong> Followers</h4>
+                <h4><strong>{{  $followingCount  }}</strong> Following</h4>
             </section>
             @if ( $user->profile != null )
                 <h3>{{  $user->profile->title  }}</h3>
