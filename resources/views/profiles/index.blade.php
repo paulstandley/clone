@@ -21,8 +21,8 @@
            </div>
             <section class="d-flex sec">
                 <h4><strong>{{  $user->posts->count()  }}</strong> Posts</h4>
-                <h4><strong>0</strong> Followers</h4>
-                <h4><strong>0</strong> Following</h4>
+                <h4><strong>{{  $user->profile->followers->count()  }}</strong> Followers</h4>
+                <h4><strong>{{  $user->following->count()  }}</strong> Following</h4>
             </section>
             @if ( $user->profile != null )
                 <h3>{{  $user->profile->title  }}</h3>

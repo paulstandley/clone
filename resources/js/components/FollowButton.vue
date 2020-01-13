@@ -24,7 +24,11 @@
                 axios.post('/follow/' + this.userId).then(resonse => {
                     this.status = ! this.status;
                     console.log(resonse);
-                })
+                }).catch(errors => {
+                    if(errors.response.status == 401) {
+                        window.location = '/login';
+                    }
+                });
             }
         },
 

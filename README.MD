@@ -215,6 +215,12 @@ php artisan make:controler FollowsController
 
 php artisan make:migration creates_profile_user_pivot_table --create profile_user
 
+composer require laravel/telescope
+
+php artisan telescope:install
+
+php artisan migrate
+
 ```
 
 ---
