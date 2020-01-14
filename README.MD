@@ -221,6 +221,10 @@ php artisan telescope:install
 
 php artisan migrate
 
+composer require illuminate/support
+
+php artisan make:mail NewUserWelcomeMail -m emails.welcome-email
+
 ```
 
 ---

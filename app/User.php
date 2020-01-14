@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -40,8 +41,8 @@ class User extends Authenticatable
     /**
     * The function returns boot model.
     *
-    * @var $user
-    * @return $user
+    * @var $user 
+    * @return $user $user->email
     */
     protected static function boot()
     {
@@ -52,9 +53,11 @@ class User extends Authenticatable
             $user->profile()->create([
                 'title' => $user->username,
             ]);
+
+            Mail::to($user->email)->send(new NewUserWelcomeMail());
         });
     }
-
+ 
     /**
     * The function returns post model relaysionship.
     *
