@@ -215,7 +215,7 @@ php artisan make:controler FollowsController
 
 php artisan make:migration creates_profile_user_pivot_table --create profile_user
 
-composer require laravel/telescope
+composer require laravel/telescope -dev
 
 php artisan telescope:install
 
@@ -224,6 +224,8 @@ php artisan migrate
 composer require illuminate/support
 
 php artisan make:mail NewUserWelcomeMail -m emails.welcome-email
+
+composer require guzzlehttp/guzzle
 
 ```
 
