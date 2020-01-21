@@ -171,7 +171,7 @@ class AppServiceProvider extends ServiceProvider
 
 php artisan migrate
 
-php artisa make:controller ProfilesController
+php artisan make:controller ProfilesController
 
 php artisan make:model Profile -m
 
@@ -205,13 +205,13 @@ php artisan tinker
 
 php artisan make:model Post -m
 
-php artisan make:conrtoller PostsController -r
+php artisan make:controller PostsController -r
 
 php artisan storage:link
 
 composer require intervention/image
 
-php artisan make:controler FollowsController
+php artisan make:controller FollowsController
 
 php artisan make:migration creates_profile_user_pivot_table --create profile_user
 
